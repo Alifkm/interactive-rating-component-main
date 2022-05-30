@@ -12,40 +12,42 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; color: white; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
+  <main class="container">
+    <div class="wrapper-content">
+      <img src="images/icon-star.svg" alt="icon-star">
+      <h1>How did we do?</h1>
+      <p>Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!</p>
+      <div class="wrapper-number" id="wrapper-number">
+        <button id="number1">1</button>
+        <button id="number2">2</button>
+        <button id="number3">3</button>
+        <button id="number4">4</button>
+        <button id="number5">5</button>
+      </div>
+      <button class="submit-button" type="submit">SUBMIT</button>
+    </div>
 
-  <!-- Rating state start -->
+    <div class="wrapper-thankyou">
+      <img src="images/illustration-thank-you.svg" alt="illustration-thank-you">
+      <p>You selected <span class="selected-number"></span> out of 5
+      </p>
+      <h2>Thank you!</h2>
+      <p>  We appreciate you taking the time to give a rating. If you ever need more support, 
+        don't hesitate to get in touch!</p>
+    </div>
+  </main>
 
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
-  
-  <div class="attribution">
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://www.frontendmentor.io/profile/Alifkm">Alif Kahfi</a>.
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

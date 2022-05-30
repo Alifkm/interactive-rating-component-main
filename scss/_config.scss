@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+$font-stack: 'Overpass', sans-serif;
+$orange: hsl(25, 97%, 53%);
+$white: hsl(0, 0%, 100%);
+$light-grey: hsl(217, 12%, 63%);
+$medium-grey: hsl(216, 12%, 54%);
+$dark-blue: hsl(213, 19%, 18%);
+$very-dark-blue: hsl(216, 12%, 8%);
+
+@mixin flexProperty($prop1, $prop2, $prop3, $prop4) {
+    display: $prop1;
+    align-items: $prop2;
+    justify-content: $prop3;
+    flex-direction: $prop4;
+}
+
+@mixin textProperty($prop1, $prop2, $prop3, $prop4, $prop5) {
+    color: $prop1;
+    font-size: $prop2;
+    font-weight: $prop3;
+    text-align: $prop4;
+    line-height: $prop5;
+}

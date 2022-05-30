@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100vh;
+  background-color: #121417;
+  font-family: "Overpass", sans-serif;
+}
+
+html .container, body .container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html .container .wrapper-content, body .container .wrapper-content {
+  width: 390px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #252d37;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+html .container .wrapper-content img, body .container .wrapper-content img {
+  background-color: #303a46;
+  width: 40px;
+  border-radius: 50px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+html .container .wrapper-content h1, body .container .wrapper-content h1 {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+html .container .wrapper-content p, body .container .wrapper-content p {
+  color: #959eac;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+html .container .wrapper-content .wrapper-number, body .container .wrapper-content .wrapper-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+html .container .wrapper-content .wrapper-number button, body .container .wrapper-content .wrapper-number button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  background-color: #303a46;
+  color: #959eac;
+}
+
+html .container .wrapper-content .wrapper-number button:hover, body .container .wrapper-content .wrapper-number button:hover {
+  background-color: #fb7413;
+  cursor: pointer;
+  color: white;
+}
+
+html .container .wrapper-content .submit-button, body .container .wrapper-content .submit-button {
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 10px 30px;
+  border: none;
+  width: 100%;
+  border-radius: 30px;
+  background-color: #fb7413;
+}
+
+html .container .wrapper-content .submit-button:hover, body .container .wrapper-content .submit-button:hover {
+  background-color: white;
+  cursor: pointer;
+  color: #fb7413;
+}
+
+html .container .wrapper-thankyou, body .container .wrapper-thankyou {
+  display: none;
+  width: 390px;
+  background-color: #252d37;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+html .container .wrapper-thankyou img, body .container .wrapper-thankyou img {
+  width: 200px;
+  margin-bottom: 30px;
+}
+
+html .container .wrapper-thankyou :nth-child(2), body .container .wrapper-thankyou :nth-child(2) {
+  background-color: #303a46;
+  color: #fb7413;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 5px 30px;
+  border: none;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+
+html .container .wrapper-thankyou h2, body .container .wrapper-thankyou h2 {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+html .container .wrapper-thankyou :nth-child(4), body .container .wrapper-thankyou :nth-child(4) {
+  color: #959eac;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 415px) {
+  html .container .wrapper-content, body .container .wrapper-content {
+    margin: 0 20px;
+  }
+}

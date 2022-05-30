@@ -1,0 +1,120 @@
+@import 'config';
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height: 100vh;
+    background-color: $very-dark-blue;
+    font-family: $font-stack;
+
+    .container {
+        height: 100%;
+        @include flexProperty(flex, center, center, null);
+
+        .wrapper-content {
+            width: 390px;
+            @include flexProperty(flex, null, center, column);
+            background-color: $dark-blue;
+            border-radius: 20px;
+            padding: 30px;
+
+            img {
+                background-color: lighten($dark-blue, 5%);
+                width: 40px;
+                border-radius: 50px;
+                padding: 10px;
+                margin-bottom: 30px;
+            }
+
+            h1 {
+                @include textProperty($white, 24px, 700, null, null);
+                margin-bottom: 10px;
+            }
+            
+            p {
+                @include textProperty($light-grey, 15px, 400, null, 1.5);
+                margin-bottom: 20px;
+            }
+
+            .wrapper-number {
+                @include flexProperty(flex, center, space-between, row);
+                width: 100%;
+                margin-bottom: 20px;
+            
+                button {
+                    width: 40px;
+                    height: 40px;
+                    border: none;
+                    border-radius: 50%;
+                    background-color: lighten($dark-blue, 5%);
+                    color: $light-grey;
+                }
+
+                button:hover {
+                    background-color: $orange;
+                    cursor: pointer;
+                    color: $white;
+                }
+            }
+
+            .submit-button {
+                @include textProperty($white, 15px, 400, null, null);
+                padding: 10px 30px;
+                border: none;
+                width: 100%;
+                border-radius: 30px;
+                background-color: $orange;
+            }
+
+            .submit-button:hover {
+                background-color: $white;
+                cursor: pointer;
+                color: $orange;
+            }
+        }
+
+        .wrapper-thankyou {
+            display: none;
+            // @include flexProperty(flex, center, center, column);
+            width: 390px;
+            background-color: $dark-blue;
+            border-radius: 20px;
+            padding: 30px;
+
+            img {
+                width: 200px;
+                margin-bottom: 30px;
+            }
+
+            :nth-child(2) {
+                background-color: lighten($dark-blue, 5%);
+                @include textProperty($orange, 15px, 400, null, null);
+                padding: 5px 30px;
+                border: none;
+                border-radius: 30px;
+                margin-bottom: 30px;
+            }
+
+            h2 {
+                @include textProperty($white, 32px, 700, null, null);
+                margin-bottom: 10px;
+            }
+
+            :nth-child(4) {
+                @include textProperty($light-grey, 15px, 400, center, 1.5);
+            }
+        }
+
+
+        @media only screen and(max-width: 415px) {
+            .wrapper-content {
+                // width: 350px;
+                margin: 0 20px;
+            }
+        }
+    }
+}
